@@ -2,7 +2,8 @@
 
 /*
 
-    Onderstaande json is te sturen via postman, link invullen, POST kiezen en bij body 'raw' kiezen en JSON selecteren 
+    Onderstaande json is te sturen via postman, link invullen, POST kiezen en bij body 'raw' kiezen en JSON selecteren.
+    Onderstaande php code is zonder check of er goede data gestuurd wordt. Nog maken.
 
 */
 
