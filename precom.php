@@ -32,17 +32,17 @@
 */
 
 
-
+//Json ontvangen
 $ruwbericht = file_get_contents("php://input");
+
+//Json decoderen
 $jsonbericht = (json_decode($ruwbericht, true));
 
+//data en sub message selecteren
+$precombericht = $jsonbericht['data']['message'];
 
-//var_dump ($jsonbericht);
-
-echo $jsonbericht['data']['message'];
-
-
-file_put_contents("log.txt", $jsonbericht['data']['message'], FILE_APPEND);
+//Precom bericht wegschrijven in .txt
+file_put_contents("log.txt", $precombericht, FILE_APPEND);
 
 
 
