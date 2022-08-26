@@ -42,7 +42,7 @@ $jsonbericht = (json_decode($ruwbericht, true));
 echo $jsonbericht['data']['message'];
 
 
-file_put_contents("/volume1/web/transip/log.txt", $jsonbericht['data']['message'], FILE_APPEND);
+file_put_contents("log.txt", $jsonbericht['data']['message'], FILE_APPEND);
 
 
 
